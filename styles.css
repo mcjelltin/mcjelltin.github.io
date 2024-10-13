@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #282c34;
+  flex-direction: column; /* Stack children vertically */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center align items */
+}
+
+.segment-display {
+  position: relative;
+  width: 160px; /* Adjusted for better aspect ratio */
+  height: 320px;
+  background-color: #333;
+  margin-bottom: 20px; /* Add space between display and buttons */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+#btnUp {
+  width: 71px;
+}
+
+.segment {
+  position: absolute;
+  background-color: #ddd;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.0s, background-color 0.0s;
+}
+
+.segment.active {
+  background-color: #ff0000; /* Red color when active */
+  opacity: 1;
+}
+
+/* Horizontal segments */
+#segment-a, #segment-d {
+  width: 100px;  /* Width of horizontal segments */
+  height: 15px;  /* Height of horizontal segments */
+  left: 30px;    /* Centered */
+}
+
+#segment-a {
+  top: 10px;     /* Top segment */
+}
+
+#segment-d {
+  bottom: 10px;  /* Bottom segment */
+}
+
+/* Middle horizontal segments (two side by side) */
+#segment-g, #segment-n {
+  width: 40px;   /* Width of each middle horizontal segment */
+  height: 15px;  /* Height of middle horizontal segments */
+  left: 28px;    /* Centered, adjusting for side-by-side */
+}
+
+#segment-g {
+  top: 150px;    /* Upper middle segment */
+}
+
+#segment-n {
+  top: 150px;    /* Lower middle segment aligned with upper */
+  left: 95px;    /* Positioned to the right */
+}
+
+/* Vertical segments */
+#segment-b, #segment-c, #segment-e, #segment-f {
+  width: 15px;
+  height: 100px;
+}
+
+#segment-b {
+  top: 35px;
+  right: 10px; /* Right-top vertical segment */
+}
+
+#segment-c {
+  top: 180px;
+  right: 10px; /* Right-bottom vertical segment */
+}
+
+#segment-e {
+  top: 180px;
+  left: 10px; /* Left-bottom vertical segment */
+}
+
+#segment-f {
+  top: 35px;
+  left: 10px; /* Left-top vertical segment */
+}
+
+/* Diagonal segments */
+#segment-h, #segment-m, #segment-j, #segment-k {
+  width: 90px;  /* Adjusted width for diagonal segments */
+  height: 15px;
+  transform-origin: center;
+}
+
+#segment-h {
+  top: 75px;    /* Top-left diagonal segment */
+  left: 0px; 
+  transform: rotate(80deg);
+}
+
+#segment-m {
+  top: 220px;   /* Bottom-left diagonal segment */
+  left: 0px; 
+  transform: rotate(100deg);
+}
+
+#segment-j {
+  top: 75px;    /* Top-right diagonal segment */
+  right: 0px; 
+  transform: rotate(-80deg);
+}
+
+#segment-k {
+  top: 220px;   /* Bottom-right diagonal segment */
+  right: 0px; 
+  transform: rotate(-100deg);
+}
+
+/* Center vertical segments */
+#segment-i, #segment-l {
+  width: 15px;
+  height: 100px;
+  left: 72px; /* Centered */
+}
+
+#segment-i {
+  top: 35px;   /* Moved up for better alignment */
+}
+
+#segment-l {
+  top: 180px; /* Moved up for better alignment */
+}

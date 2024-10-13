@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-Segment Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--
+    <div>
+        <h1>
+            Interactive 14-Segment Display
+        </h1>
+    </div>
+    -->
+    
+    <div class="container">
+        <div class="segment-display">
+            <div class="segment" id="segment-a" onclick="toggleSegment('a')"></div>
+            <div class="segment" id="segment-b" onclick="toggleSegment('b')"></div>
+            <div class="segment" id="segment-c" onclick="toggleSegment('c')"></div>
+            <div class="segment" id="segment-d" onclick="toggleSegment('d')"></div>
+            <div class="segment" id="segment-e" onclick="toggleSegment('e')"></div>
+            <div class="segment" id="segment-f" onclick="toggleSegment('f')"></div>
+            <div class="segment" id="segment-g" onclick="toggleSegment('g')"></div>
+            <div class="segment" id="segment-n" onclick="toggleSegment('n')"></div>
+            <div class="segment" id="segment-h" onclick="toggleSegment('h')"></div>
+            <div class="segment" id="segment-i" onclick="toggleSegment('i')"></div>
+            <div class="segment" id="segment-j" onclick="toggleSegment('j')"></div>
+            <div class="segment" id="segment-k" onclick="toggleSegment('k')"></div>
+            <div class="segment" id="segment-l" onclick="toggleSegment('l')"></div>
+            <div class="segment" id="segment-m" onclick="toggleSegment('m')"></div>
+        </div>
+
+        <div class="button-container">
+            <button onclick="reset()" id="btnReset">
+            Reset
+            </button>
+            
+            <button onclick="up()" id="btnUp">
+                Up 0/53
+            </button>
+
+            <button onclick="down()" id="btnDown">
+                Down
+            </button>
+        </div>
+    
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
