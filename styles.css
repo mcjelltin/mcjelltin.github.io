@@ -8,6 +8,11 @@ body {
   flex-direction: column; /* Stack children vertically */
 }
 
+#message{
+  align-items: center;
+  color: #ffb3d1;
+}
+
 .container {
   display: flex;
   flex-direction: column; /* Align children in a column */
